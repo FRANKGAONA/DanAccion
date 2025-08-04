@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frank Gaona | Presentación Personal</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tech-box {
+      background: rgba(34, 193, 195, 0.12);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+      padding: 2rem 2.5rem;
+      max-width: 400px;
+      text-align: center;
+      border: 2px solid #0ff1ce;
+      position: relative;
+    }
+    .tech-box::before {
+      content: '';
+      position: absolute;
+      top: 10px; left: 10px; right: 10px; bottom: 10px;
+      border-radius: 12px;
+      border: 2px dashed #57e8fc;
+      pointer-events: none;
+      z-index: 0;
+    }
+    h1 {
+      font-size: 2.1rem;
+      color: #00ffe7;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 12px #00ffe7a1;
+    }
+    .career {
+      font-size: 1.1rem;
+      color: #ffd700;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      color: #f5f5f5;
+      margin-bottom: 0;
+      z-index: 1;
+      position: relative;
+    }
+    .tech-icons {
+      margin: 22px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+    .tech-icons img {
+      width: 38px;
+      height: 38px;
+      opacity: 0.85;
+      transition: transform 0.2s;
+    }
+    .tech-icons img:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+    @media (max-width: 500px) {
+      .tech-box {
+        padding: 1.2rem 0.5rem;
+        max-width: 95vw;
+      }
+      h1 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="tech-box">
+    <h1>Frank Gaona</h1>
+    <div class="career">Estudiante en Computación e Informática</div>
+    <p>
+      ¡Hola! Soy Frank Gaona, apasionado por la tecnología y el desarrollo de software.<br>
+      Actualmente curso la carrera de Computación e Informática.<br>
+      Me encanta explorar nuevas herramientas, lenguajes y tendencias en el mundo digital.
+    </p>
+    <div class="tech-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub"/>
+    </div>
+  </div>
+</body>
+</html>
